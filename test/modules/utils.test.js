@@ -29,6 +29,10 @@ test('getUnique() method', t => {
     const actual2 = getUnique([ 'a', 'a', 'a', 'a', 'a']);
     const expected2 = ['a'];
     t.same(actual2, expected2);
+
+    const actual3 = getUnique([ 'a', 'b', 'c', 'd', 1, 2, 3]);
+    const expected3 = [ 'a', 'b', 'c', 'd', 1, 2, 3];
+    t.same(actual3, expected3);
 	
 });
 
